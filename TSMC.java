@@ -1,0 +1,3 @@
+class TSMC extends ManufacturingCompany{
+
+}
