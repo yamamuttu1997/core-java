@@ -1,6 +1,6 @@
-public class Airport{
+public class AirportDTO{
 
-public Airport(){
+public AirportDTO(){
 }
 private String name;
 private String location;
@@ -37,10 +37,6 @@ public int getAvrgFlightLanding(){
 }
 public void setAvrgFlightLanding(int avrgFlightLanding){
 	this.avrgFlightLanding=avrgFlightLanding;
-}
-
-public void buyTicket(){
-	System.out.println("Travel in plane");
 }
 
 

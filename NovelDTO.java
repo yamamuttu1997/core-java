@@ -1,6 +1,6 @@
-public class Novel{
+public class NovelDTO{
 
-public Novel(){
+public NovelDTO(){
 }
 
 private String name;
@@ -36,15 +36,11 @@ public void setPages(int pages){
 }
 public String getPublisher(){
 	return publisher;
+	
 }
 public void setPublisher(String publisher){
-this.publisher=publisher;
+	this.publisher=publisher;
 }
- void readNovel(){
-	 System.out.println("Habbit of reading Novel is Good");
- }
-
-
 }
 
 

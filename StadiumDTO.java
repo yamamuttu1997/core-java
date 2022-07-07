@@ -1,5 +1,5 @@
-public class Stadium{
-public Stadium(){
+public class StadiumDTO{
+public StadiumDTO(){
 }
 private String name;
 private String location;
@@ -37,8 +37,6 @@ public int getSeatNo(){
 public void setSeatNo(int seatNo){
 	this.seatNo=seatNo;
 }
-public void watchMatch(){
-	System.out.println("High voltage Match");
-}
+
 
 }
