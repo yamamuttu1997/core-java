@@ -1,80 +1,105 @@
-import java.util.Scanner;
+import java.util.Scanner ;
+class HospitalTester{
 
- class HospitalTester{
+     public static void main(String a[]){
+	 
+	     Scanner sc = new Scanner(System.in);
+		    System.out.println("The number of patient");
+			int size = sc.nextInt();
+	   
+		 Hospital hos = new Hospital(size);
+		 
+		 for(int i=0; i<size;i++) {
+		 PatientDTO dto = new PatientDTO();
+		 
+		      System.out.println("Enter the patient name ");
+	          String name = sc.next();
+			  System.out.println("Enter the patient address ");
+			  String address = sc.next();
+			  System.out.println("Enter the patient id ");
+			  int id = sc.nextInt();
+			  System.out.println("Enter the patient contact no ");
+			  long contactNo = sc.nextLong();
+			  System.out.println("Enter the gender");
+			  String ge = sc.next();
+			  
+		 
+		 dto.setGender(Gender.valueOf(ge)); 
+		 dto.setId(id);
+		 dto.setName(name);
+		 dto.setAddress(address);
+		 dto.setContactNo(contactNo);
 
-public static void main(String[] args){
-
-Scanner sc=new Scanner(System.in);
-
-System.out.println("Enter the number of patients to be added");
-int size=sc.nextInt();
-
-
-Hospital hos=new Hospital(size);
-
-for(int i=0; i<size;i++){
 	
-	System.out.println("Enter the id");
-int id=sc.nextInt();
+		
+		 
+		hos.createPatient(dto);}
+		
+		String options = null;
+		
+		do{
+		     System.out.println("Enter 1 to fetch the all patients");
+			 System.out.println("Enter 2 to update address by existing id");
+			 System.out.println("Enter 3 to update contactNo by existing name ");
+			 System.out.println("enter 4 to delete patient details by name");
+			 System.out.println("enter 5 to delete patient details by contactNo");
+			 System.out.println("Enter 6 to get the name by id");
+			 System.out.println("Enter 7 to get the contact no by name");
+			 System.out.println("Enter 8 to delete the patient details by gender");
+			 
+			 System.out.println("enter the choice");
+			 int choice = sc.nextInt();
+			 
+			 switch(choice){
+				    
+					case 1 : hos.getPatientDetails();
+					          break ;
+					case 2 : System.out.println("Enter the existing id to update the address");
+		                     int existingId = sc.nextInt();
+		                     System.out.println("Enter address to be update");
+		                     String updateAddress = sc.next();
+		                     hos.updatePatientAddressById(existingId, updateAddress);
+				              break ;
+					case 3 : System.out.println("Enter the existing Name to update the ContatNo");
+		                     String existingName = sc.next();
+		                     System.out.println("Enter contactNo to be update");
+		                     long updateContactNo = sc.nextLong();
+		                     hos.updatePatientContactNoByName(existingName, updateContactNo);
+							 break ;
+					case 4 : System.out.println("Enter the name to be deleted");
+		                     String name1 = sc.next();
+		                     hos.deletePatientDetailsByName(name1);
+							  break ;
+					case 5 :  System.out.println("enter the contact no to delete patient details");
+		                      long contactNo1 = sc.nextLong();
+		                      hos.deletePatientByContactNo(contactNo1);
+							  break ;
+					case 6 : System.out.println("enter the id to get name");
+                              int existingId1 = sc.nextInt();
+                              System.out.println(hos.getPatientNameById(existingId1));	
+							  break;
+                    case 7 : System.out.println("enter the existing name to get contact number");
+                              String exstingName = sc.next();
+                              System.out.println(hos.getPatientContactNoByName(exstingName));
+							  break ;
+                    case 8 : System.out.println("Enter the Gender to delete patient details");
+		                     String ge1 = sc.next();
+		                     hos.deletePatientDetailsByGender(Gender.valueOf(ge1));
+							  break ;							  
+					default : System.out.println("Enter the valid choices");
+					          break;
 
-System.out.println("Enter the patient name");
-String name=sc.next();
+			 }
+			    
+				System.out.println("Do you want to continue Y/N");
+				options = sc.next();
+			 
+			 
+		}while(options.equals("Y"));
+		 
+		
+		
+	 }
 
-System.out.println("Enter the contactno");
-long contactno=sc.nextLong();
-
-System.out.println("Enter the Address");
-String address=sc.next();
-
-PatientDTO dto=new PatientDTO();
-dto.setId(id);
-dto.setName(name);
-//dto.setGender(Gender.male);
-dto.setContactNo(contactno);
-dto.setAddress(address);
-hos.createPatient(dto);
-}
-
-
-
-
-/*
-PatientDTO dto2=new PatientDTO();
-dto2.setId(3);
-dto2.setName("Akash");
-dto2.setGender(Gender.male);
-dto2.setContactNo(867785995l);
-dto2.setAddress("Bilagi");
-
-PatientDTO dto3=new PatientDTO();
-dto3.setId(4);
-dto3.setName("Madhu");
-dto3.setGender(Gender.female);
-dto3.setContactNo(9786885554l);
-dto3.setAddress("Mudhol");
-
-PatientDTO dto4=new PatientDTO();
-dto4.setId(5);
-dto4.setName("Manoj");
-dto4.setGender(Gender.transgender);
-dto4.setContactNo(766788578l);
-dto4.setAddress("Sirsi");
-
-hos.createPatient(dto);
-hos.createPatient(dto1);
-hos.createPatient(dto2);
-hos.createPatient(dto3);
-hos.createPatient(dto4);*/
-
-hos.getPatientDetails();
-//invokening the updatePatientAddressById method
-System.out.println("enter the existing id for address has to be");
-int existingId=sc.nextInt();
-System.out.println("Enter the address to be updated");
-String updatedAddress=sc.next();
-hos.updatePatientAddressById(existingId,updatedAddress);
-hos.getPatientDetails();
-
-}
 
 }
