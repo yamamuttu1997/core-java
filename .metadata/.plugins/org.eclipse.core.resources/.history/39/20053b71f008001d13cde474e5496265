@@ -1,0 +1,5 @@
+package com.xworkz.game.dto;
+
+public class GameTester {
+
+}

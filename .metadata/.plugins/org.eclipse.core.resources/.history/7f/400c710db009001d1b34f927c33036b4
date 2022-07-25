@@ -1,0 +1,5 @@
+package com.xworkz.hotel.crud.impl;
+
+public class HotelImpl {
+
+}

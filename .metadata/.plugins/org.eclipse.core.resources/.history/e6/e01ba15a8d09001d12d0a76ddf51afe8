@@ -1,0 +1,5 @@
+package com.xworkz.hospital.crud.impl;
+
+public class HospitalImpl {
+
+}

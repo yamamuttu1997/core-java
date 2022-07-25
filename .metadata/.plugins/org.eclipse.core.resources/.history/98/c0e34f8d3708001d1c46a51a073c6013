@@ -1,0 +1,15 @@
+package com.xworkz.weapon.dto;
+
+public class WeaponDTO {
+
+	private String name;
+	private String type;
+	private double range;
+	private String origin;
+	public WeaponDTO() {
+
+	}
+	
+	
+
+}

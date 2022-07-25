@@ -1,0 +1,5 @@
+package com.xworkz.hospital.dto;
+
+public class PatientDTO {
+
+}

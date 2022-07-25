@@ -1,0 +1,5 @@
+package com.xworkz.customer.crud.impl;
+
+public class CustomerImpl {
+
+}

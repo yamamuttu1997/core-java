@@ -1,0 +1,5 @@
+package com.xworkz.customer.dto;
+
+public class OrderDTO {
+
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.xworkz.hospital.constant.Gender"/>
+    <fullyQualifiedTypeName name="com.xworkz.newspaper.dto.NewsPaperDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.novel.dto.NovelDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.game.dto.GameDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.ipl.dto.IplDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.stadim.dto.StadiumDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.weapon.dto.WeaponDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.bigbasket.dto.BigBasketDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.hospital.dto.PatientDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.hospital.crud.impl.HospitalImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.hospital.crud.Hospital"/>
+    <fullyQualifiedTypeName name="com.xworkz.airport.dto.TerminalDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.airport.crud.impl.AirportImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.airport.crud.Airport"/>
+    <fullyQualifiedTypeName name="com.xworkz.library.crud.Library"/>
+    <fullyQualifiedTypeName name="com.xworkz.library.crud.dto.BooksDTO"/>
+    <fullyQualifiedTypeName name="com.xworkz.library.crud.impl.LibraryImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.hotel.crud.impl.HotelImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.hotel.crud.Hotel"/>
+    <fullyQualifiedTypeName name="com.xworkz.hotel.dto.FoodItemsDTO"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.xworkz.customer.crud.impl.CustomerImpl"/>
+    <fullyQualifiedTypeName name="com.xworkz.customer.crud.Customer"/>
+    <fullyQualifiedTypeName name="com.xworkz.customer.dto.OrderDTO"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+</qualifiedTypeNameHistroy>

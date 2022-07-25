@@ -1,0 +1,18 @@
+package com.xworkz.ipl.dto;
+
+public class IplTester {
+ 
+	public static void main(String[] args) {
+		
+		IplDTO ipl=new IplDTO();
+		ipl.setGameOf("Cricket");
+		ipl.setType("Domestic");
+		ipl.setSponser("TATA");
+		ipl.setMangedBy("BCCI");
+		ipl.setTeams(10);
+		
+	System.out.println(ipl.getGameOf()+" "+ipl.getType()+" "+ipl.getSponser()+" "+ipl.getMangedBy()+" "+ipl.getTeams());
+	
+	}
+	
+}

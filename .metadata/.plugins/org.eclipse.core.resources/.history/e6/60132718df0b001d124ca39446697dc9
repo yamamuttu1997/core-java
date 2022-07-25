@@ -1,0 +1,22 @@
+package com.xworkz.blocks;
+
+public class BlockTester {
+
+	public BlockTester() {
+		System.out.println();
+	}
+	
+	int blockInIt;
+	{
+		System.out.println("block is executed");
+		blockInIt=10;
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Main method started");
+		BlockTester blocktester =new BlockTester();
+		System.out.println("blocktester.blockInIt");
+		
+		System.out.println("MainMethod endeds");
+	}
+}

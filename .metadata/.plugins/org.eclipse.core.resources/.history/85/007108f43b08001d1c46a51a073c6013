@@ -1,0 +1,11 @@
+package com.xworkz.weapon.dto;
+
+public class WeaponTester {
+
+  public static void main(String[] args) {
+	  
+	  WeaponDTO wp= new WeaponDTO();
+	  wp.setName("351 Magnum");
+  }
+  
+}

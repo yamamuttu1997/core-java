@@ -1,0 +1,10 @@
+package com.xworkz.blocks;
+
+public class Block {
+
+	public Block() {
+	System.out.println(this.getClass().getSimpleName()+"Object is created");
+	}
+
+	
+}

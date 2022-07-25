@@ -1,0 +1,5 @@
+package com.xworkz.airport.crud.impl;
+
+public class AirportImpl {
+
+}

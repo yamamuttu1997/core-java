@@ -1,0 +1,5 @@
+package com.xworkz.novel.dto;
+
+public class NovelTester {
+
+}
